@@ -631,6 +631,7 @@ The command removes all the Kubernetes components associated with the chart and 
 | `queryFrontend.service.externalTrafficPolicy`    | queryFrontend service external traffic policy                    | `Cluster`   |
 | `queryFrontend.service.annotations`              | Additional custom annotations for queryFrontend service          | `{}`        |
 | `queryFrontend.service.extraPorts`               | Extra ports to expose in the queryFrontend service               | `[]`        |
+| `queryFrontend.service.headless.annotations`     | Annotations for the headless service.                            | `{}`        |
 
 ### Vulture Deployment Parameters
 
@@ -772,8 +773,6 @@ The command removes all the Kubernetes components associated with the chart and 
 | `memcached.auth.username`           | Memcached admin user            | `""`    |
 | `memcached.auth.password`           | Memcached admin password        | `""`    |
 | `memcached.service.ports.memcached` | Memcached service port          | `11211` |
-
-
 
 Specify each parameter using the `--set key=value[,key=value]` argument to `helm install`. For example,
 
