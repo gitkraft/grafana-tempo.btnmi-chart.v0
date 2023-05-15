@@ -8,6 +8,8 @@ Grafana Tempo is a distributed tracing system that has out-of-the-box integratio
 
 Trademarks: This software listing is packaged by Bitnami. The respective trademarks mentioned in the offering are owned by the respective companies, and use of them does not imply any affiliation or endorsement.
 
+Looking to use Grafana Tempo in production? Try [VMware Application Catalog](https://bitnami.com/enterprise), the enterprise edition of Bitnami Application Catalog.
+
 ## TL;DR
 
 ```console
@@ -119,13 +121,13 @@ The command removes all the Kubernetes components associated with the chart and 
 | `compactor.args`                                  | Override default container args (useful when using custom images)                                   | `[]`            |
 | `compactor.replicaCount`                          | Number of Compactor replicas to deploy                                                              | `1`             |
 | `compactor.livenessProbe.enabled`                 | Enable livenessProbe on Compactor nodes                                                             | `true`          |
-| `compactor.livenessProbe.initialDelaySeconds`     | Initial delay seconds for livenessProbe                                                             | `60`            |
+| `compactor.livenessProbe.initialDelaySeconds`     | Initial delay seconds for livenessProbe                                                             | `80`            |
 | `compactor.livenessProbe.periodSeconds`           | Period seconds for livenessProbe                                                                    | `10`            |
 | `compactor.livenessProbe.timeoutSeconds`          | Timeout seconds for livenessProbe                                                                   | `1`             |
 | `compactor.livenessProbe.failureThreshold`        | Failure threshold for livenessProbe                                                                 | `3`             |
 | `compactor.livenessProbe.successThreshold`        | Success threshold for livenessProbe                                                                 | `1`             |
 | `compactor.readinessProbe.enabled`                | Enable readinessProbe on Compactor nodes                                                            | `true`          |
-| `compactor.readinessProbe.initialDelaySeconds`    | Initial delay seconds for readinessProbe                                                            | `60`            |
+| `compactor.readinessProbe.initialDelaySeconds`    | Initial delay seconds for readinessProbe                                                            | `80`            |
 | `compactor.readinessProbe.periodSeconds`          | Period seconds for readinessProbe                                                                   | `10`            |
 | `compactor.readinessProbe.timeoutSeconds`         | Timeout seconds for readinessProbe                                                                  | `1`             |
 | `compactor.readinessProbe.failureThreshold`       | Failure threshold for readinessProbe                                                                | `3`             |
